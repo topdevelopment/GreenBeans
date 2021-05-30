@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- listview_product_item_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_product_item_background">
+
+    <ImageView
+        android:layout_width="@dimen/tv_quantity_width"
+        android:layout_height="@dimen/tv_quantity_width"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/default_margin"
+        android:id="@+id/imageview_produt_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_alignTop="@id/button_product_details"
+        android:layout_toEndOf="@id/imageview_produt_image"
+        style="@style/MenuTextView"
+        android:text="test"
+        android:id="@+id/tv_product_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:layout_below="@id/tv_product_name"
+        android:layout_toEndOf="@id/imageview_produt_image"
+        style="@style/MenuTextView"
+        android:text="test"
+        android:id="@+id/tv_price"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_centerVertical="true"
+        style="@style/GreenBeansSecondaryButton"
+        android:text="@string/b_product_details"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button_product_details"/>
+
+</RelativeLayout>

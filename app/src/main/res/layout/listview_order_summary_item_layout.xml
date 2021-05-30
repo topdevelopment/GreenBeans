@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- listview_order_summary_item_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_item_background">
+
+    <ImageView
+        android:layout_width="@dimen/store_product_image_width_height"
+        android:layout_height="@dimen/store_product_image_width_height"
+        android:layout_margin="@dimen/large_margin"
+        android:id="@+id/imageview_produt_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageview_produt_image"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansTitle"
+        android:text="test"
+        android:id="@+id/tv_product_title"/>
+
+    <Button
+        android:layout_width="@dimen/circle_button_width_height"
+        android:layout_height="@dimen/circle_button_width_height"
+        android:layout_below="@id/tv_product_title"
+        android:layout_toRightOf="@id/imageview_produt_image"
+        android:layout_marginTop="@dimen/small_margin"
+        style="@style/GreenBeansBlackButton"
+        android:text="@string/b_minus"
+        android:id="@+id/button_minus"/>
+
+    <TextView
+        android:layout_width="@dimen/tv_quantity_width"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/button_minus"
+        android:layout_alignTop="@id/button_minus"
+        style="@style/GreenBeansTitle"
+        android:text="1"
+        android:textAlignment="center"
+        android:id="@+id/tv_quantity"/>
+
+    <Button
+        android:layout_width="@dimen/circle_button_width_height"
+        android:layout_height="@dimen/circle_button_width_height"
+        android:layout_below="@id/tv_product_title"
+        android:layout_toRightOf="@id/tv_quantity"
+        android:layout_marginTop="@dimen/small_margin"
+        style="@style/GreenBeansBlackButton"
+        android:text="@string/b_add"
+        android:id="@+id/button_add"/>
+
+    <Button
+        android:layout_width="@dimen/circle_button_width_height"
+        android:layout_height="@dimen/circle_button_width_height"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansBlackButton"
+        android:text="@string/b_remove"
+        android:id="@+id/button_remove"/>
+
+</RelativeLayout>

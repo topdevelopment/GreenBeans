@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- listview_admin_product_item_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_product_item_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        style="@style/MenuTextView"
+        android:text="test"
+        android:id="@+id/tv_product_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:layout_below="@id/tv_product_name"
+        style="@style/MenuTextView"
+        android:text="test"
+        android:id="@+id/tv_product_desc"/>
+
+</RelativeLayout>

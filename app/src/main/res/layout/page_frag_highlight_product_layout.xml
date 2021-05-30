@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- page_frag_highlighted_product_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pager_item_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/GreenBeansPagerContent.Gold"
+        android:layout_marginStart="@dimen/large_margin"
+        android:id="@+id/tv_product_discount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_discount"
+        style="@style/GreenBeansPagerContent"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:id="@+id/tv_product_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_alignParentEnd="true"
+        style="@style/GreenBeansPagerContent"
+        android:id="@+id/tv_product_price"/>
+
+</RelativeLayout>

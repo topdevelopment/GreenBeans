@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- menu_product_details.xml
+-
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/back"
+        android:icon="@drawable/icon_back"
+        android:title="@string/menu_title_back"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/menu"
+        android:icon="@drawable/menu"
+        android:title="@string/menu_title_menu"
+        app:showAsAction="always"/>
+
+</menu>

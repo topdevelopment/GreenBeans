@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- dialog_order_status_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:layout_margin="@dimen/default_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        style="@style/GreenBeansDialogTitle"
+        android:text="@string/tv_update_state"
+        android:id="@+id/tv_title"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_completed"
+        android:id="@+id/button_completed"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_completed"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_en_route"
+        android:id="@+id/button_en_route"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_en_route"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_ready_for_pickup"
+        android:id="@+id/button_ready_for_pickup"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_ready_for_pickup"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_cancel"
+        android:id="@+id/button_cancel"/>
+
+</RelativeLayout>

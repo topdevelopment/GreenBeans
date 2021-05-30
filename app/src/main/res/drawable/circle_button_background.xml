@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- circle_button_background.xml
+-
+-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <shape android:shape="oval">
+            <!--<stroke android:color="@color/greenbeans_secondary" android:width="@dimen/ui_stroke_width"/>-->
+            <solid android:color="@color/greenbeans_primary"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/greenbeans_primary_dark"/>
+        </shape>
+    </item>
+
+</selector>

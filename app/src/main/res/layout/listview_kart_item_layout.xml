@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- listview_kart_item_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_product_item_background">
+
+    <ImageView
+        android:layout_width="@dimen/kart_item_height_width"
+        android:layout_height="@dimen/kart_item_height_width"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageview_produt_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageview_produt_image"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginBottom="@dimen/large_margin"
+        style="@style/MenuTextView"
+        android:text="testing"
+        android:id="@+id/tv_product_name"/>
+
+    <Button
+        android:layout_toStartOf="@id/et_current_quantity_value"
+        style="@style/GreenBeansMenuCircleButton"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/b_minus"
+        android:id="@+id/button_minus"/>
+
+    <EditText
+        android:layout_width="@dimen/imageview_menu_width_height"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/button_add"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:enabled="false"
+        android:layout_centerVertical="true"
+        style="@style/GreenBeansEditText"
+        android:text="@string/et_text_one"
+        android:id="@+id/et_current_quantity_value" />
+
+    <Button
+        android:layout_alignParentEnd="true"
+        style="@style/GreenBeansMenuCircleButton"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/b_add"
+        android:id="@+id/button_add"/>
+
+</RelativeLayout>

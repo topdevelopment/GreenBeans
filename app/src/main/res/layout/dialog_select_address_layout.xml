@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- dialog_select_address_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_listview_height"
+        style="@style/GreenBeansListView"
+        android:layout_margin="@dimen/default_margin"
+        android:id="@+id/listview_addresses"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listview_addresses"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_select"
+        android:id="@+id/button_select"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_select"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_cancel"
+        android:id="@+id/button_cancel"/>
+
+</RelativeLayout>

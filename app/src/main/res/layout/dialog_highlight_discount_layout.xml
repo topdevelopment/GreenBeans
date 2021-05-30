@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- dialog_highlight_discount_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:layout_margin="@dimen/default_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        style="@style/GreenBeansDialogTitle"
+        android:text="@string/dialog_title_highlight_discount"
+        android:textAlignment="center"
+        android:id="@+id/tv_title"/>
+
+    <EditText
+        android:layout_width="@dimen/highlight_discount_edittext_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        style="@style/GreenBeansEditText"
+        android:hint="@string/et_hint_highlight_discount"
+        android:inputType="number"
+        android:id="@+id/edittext_discount"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_discount"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_confirm"
+        android:id="@+id/button_confirm"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_confirm"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_cancel"
+        android:id="@+id/button_cancel"/>
+
+</RelativeLayout>

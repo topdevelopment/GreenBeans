@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- dialog_product_type_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/tv_select_product_type"
+        style="@style/GreenBeansDialogTitle"
+        android:id="@+id/tv_title"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/b_merchandise"
+        style="@style/GreenBeansButton"
+        android:id="@+id/button_merchandise"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_merchandise"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/b_supplies"
+        style="@style/GreenBeansButton"
+        android:id="@+id/button_supplies"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_supplies"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/b_flower"
+        style="@style/GreenBeansButton"
+        android:id="@+id/button_flower"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_flower"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/b_edibles"
+        style="@style/GreenBeansButton"
+        android:id="@+id/button_edibles"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_edibles"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/b_cbd"
+        style="@style/GreenBeansButton"
+        android:id="@+id/button_cbd"/>
+
+</RelativeLayout>

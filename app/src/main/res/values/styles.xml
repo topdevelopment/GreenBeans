@@ -1,0 +1,111 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="GreenBeansButton">
+        <item name="android:background">@drawable/button_default_layout</item>
+        <item name="android:textSize">@dimen/button_textsize</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="GreenBeansSecondaryButton">
+        <item name="android:background">@drawable/button_secondary_layout</item>
+        <item name="android:textSize">@dimen/button_textsize</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="GreenBeansBlackButton">
+        <item name="android:background">@drawable/black_button_background</item>
+        <item name="android:textSize">@dimen/button_textsize</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="GreenBeansCircleButton">
+        <item name="android:background">@drawable/circle_button_background</item>
+        <item name="android:layout_width">@dimen/circle_button_width_height</item>
+        <item name="android:layout_height">@dimen/circle_button_width_height</item>
+    </style>
+
+    <style name="GreenBeansSizeCircleButton">
+        <item name="android:background">@drawable/size_circle_button_background</item>
+        <item name="android:layout_width">@dimen/circle_button_width_height</item>
+        <item name="android:layout_height">@dimen/circle_button_width_height</item>
+    </style>
+
+    <style name="GreenBeansMenuCircleButton">
+        <item name="android:background">@drawable/menu_circle_button_background</item>
+        <item name="android:layout_width">@dimen/circle_button_width_height</item>
+        <item name="android:layout_height">@dimen/circle_button_width_height</item>
+    </style>
+
+    <style name="GreenBeansEditText">
+        <item name="android:background">@drawable/edittext_default_layout</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="GreenBeansTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/title_textsize</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="GreenBeansPagerContent">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/title_textsize</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="GreenBeansPagerContent.Gold">
+        <item name="android:textColor">@color/gold</item>
+        <item name="android:textSize">@dimen/discount_textsize</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="GreenBeansDialogTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/dialog_title_textsize</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="GreenBeansContent">
+        <item name="android:textColor">@color/greenbeans_primary</item>
+        <item name="android:textSize">@dimen/content_textsize</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="GreenBeansButton.StoreCategory">
+        <item name="android:textSize">@dimen/store_category_textsize</item>
+        <item name="android:layout_height">@dimen/store_categories_button_height</item>
+        <item name="android:layout_width">@dimen/store_categories_button_width</item>
+    </style>
+
+    <style name="GreenBeansButton.StoreCategory.Selected">
+        <item name="android:background">@drawable/button_selected_layout</item>
+    </style>
+
+    <style name="MenuTextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">@dimen/menu_textsize</item>
+    </style>
+
+    <style name="MenuButton">
+        <item name="android:layout_height">@dimen/menu_button_width_height</item>
+        <item name="android:layout_width">@dimen/menu_button_width_height</item>
+        <item name="android:background">@drawable/circle_button_background</item>
+
+    </style>
+
+    <style name="GreenBeansListView">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_margin">@dimen/default_margin</item>
+    </style>
+
+</resources>

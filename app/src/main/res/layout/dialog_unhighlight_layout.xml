@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- dialog_unhighlight_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:layout_margin="@dimen/default_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        style="@style/GreenBeansDialogTitle"
+        android:text="@string/dialog_title_unhighlight_product"
+        android:textAlignment="center"
+        android:id="@+id/tv_title"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_yes"
+        android:id="@+id/button_yes"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_yes"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_no"
+        android:id="@+id/button_no"/>
+
+</RelativeLayout>

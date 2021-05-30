@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "189386134465",
+    "project_id": "greenbeans-9bcea",
+    "storage_bucket": "greenbeans-9bcea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189386134465:android:b808179eaed5d31fcd5540",
+        "android_client_info": {
+          "package_name": "com.top.greenbeans"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189386134465-epqe4sra6mjsjmh8mrveajuciqr921t8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.top.greenbeans",
+            "certificate_hash": "2ba4aee7e2d3fe390a9197a3d8b5aa15c9289ad5"
+          }
+        },
+        {
+          "client_id": "189386134465-dbtt5jfso9bg9ont4lk0v3khdh4drog9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDav6JK0fQkj19aJYRoPt8JnyXj7pkBiPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189386134465-dbtt5jfso9bg9ont4lk0v3khdh4drog9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

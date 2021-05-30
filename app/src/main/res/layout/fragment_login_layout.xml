@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- fragment_login_layout.xml
+-
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/black_background_green_outline">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline_center"
+        android:layout_margin="@dimen/default_margin"
+        android:src="@drawable/greenbeanslogo"
+        android:id="@+id/imageview_logo"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/guideline_center"
+        app:layout_constraintStart_toStartOf="@id/guideline_10"
+        app:layout_constraintEnd_toEndOf="@id/guideline_90"
+        style="@style/GreenBeansEditText"
+        android:layout_margin="@dimen/default_margin"
+        android:hint="@string/et_hint_email"
+        android:inputType="text"
+        android:singleLine="true"
+        android:id="@+id/edittext_email"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edittext_email"
+        app:layout_constraintStart_toStartOf="@id/guideline_10"
+        app:layout_constraintEnd_toEndOf="@id/guideline_90"
+        style="@style/GreenBeansEditText"
+        android:layout_margin="@dimen/default_margin"
+        android:hint="@string/et_hint_password"
+        android:inputType="textPassword"
+        android:id="@+id/edittext_password"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edittext_password"
+        app:layout_constraintStart_toStartOf="@id/guideline_10"
+        app:layout_constraintEnd_toEndOf="@id/guideline_90"
+        style="@style/GreenBeansButton"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/b_login"
+        android:id="@+id/button_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/checkbox_stay_signed_in"
+        app:layout_constraintBottom_toBottomOf="@id/checkbox_stay_signed_in"
+        app:layout_constraintStart_toStartOf="@id/guideline_10"
+        app:layout_constraintEnd_toEndOf="@id/guideline_90"
+        android:textColor="@android:color/white"
+        android:text="@string/tv_stay_signed_in"
+        android:id="@+id/textview_stay_signed_in"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_login"
+        app:layout_constraintEnd_toStartOf="@id/textview_stay_signed_in"
+        android:checked="false"
+        android:background="@android:drawable/checkbox_off_background"
+        android:id="@+id/checkbox_stay_signed_in"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_stay_signed_in"
+        app:layout_constraintStart_toStartOf="@id/guideline_10"
+        app:layout_constraintEnd_toStartOf="@id/button_signup"
+        style="@style/GreenBeansButton"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/b_guest_login"
+        android:id="@+id/button_guest_login"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_stay_signed_in"
+        app:layout_constraintStart_toEndOf="@id/button_guest_login"
+        app:layout_constraintEnd_toEndOf="@id/guideline_90"
+        style="@style/GreenBeansButton"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/b_sign_up"
+        android:id="@+id/button_signup"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.1"
+        android:orientation="vertical"
+        android:id="@+id/guideline_10"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="vertical"
+        android:id="@+id/guideline_90"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="horizontal"
+        android:id="@+id/guideline_center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

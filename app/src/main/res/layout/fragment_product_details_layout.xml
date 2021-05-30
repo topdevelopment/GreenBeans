@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- fragment_product_details_layout.xml
+-
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/black_background_green_outline">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/default_margin"
+        style="@style/GreenBeansTitle"
+        android:text="testing"
+        android:id="@+id/tv_product_name"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansContent"
+        android:id="@+id/tv_product_desc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansTitle"
+        android:text="price"
+        android:id="@+id/tv_product_price"/>
+
+    <ImageView
+        android:layout_width="@dimen/product_image_width_height"
+        android:layout_height="@dimen/product_image_width_height"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/et_current_quantity_value"
+        android:id="@+id/imageview_produt_image"/>
+
+    <Button
+        app:layout_constraintBottom_toTopOf="@id/button_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_medium"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:visibility="invisible"
+        style="@style/GreenBeansSizeCircleButton"
+        android:text="@string/b_small_size"
+        android:id="@+id/button_small"/>
+
+    <Button
+        app:layout_constraintBottom_toTopOf="@id/button_minus"
+        app:layout_constraintStart_toEndOf="@id/button_small"
+        app:layout_constraintEnd_toStartOf="@id/button_large"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:visibility="invisible"
+        style="@style/GreenBeansSizeCircleButton"
+        android:text="@string/b_medium_size"
+        android:id="@+id/button_medium"/>
+
+    <Button
+        app:layout_constraintBottom_toTopOf="@id/button_minus"
+        app:layout_constraintStart_toEndOf="@id/button_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:visibility="invisible"
+        style="@style/GreenBeansSizeCircleButton"
+        android:text="@string/b_large_size"
+        android:id="@+id/button_large"/>
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="@id/et_current_quantity_value"
+        app:layout_constraintTop_toTopOf="@id/et_current_quantity_value"
+        app:layout_constraintEnd_toStartOf="@id/et_current_quantity_value"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/GreenBeansCircleButton"
+        android:text="@string/b_minus"
+        android:id="@+id/button_minus"/>
+
+    <EditText
+        android:layout_width="@dimen/circle_button_width_height"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/button_add_to_kart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/large_margin"
+        style="@style/GreenBeansEditText"
+        android:enabled="false"
+        android:text="@string/et_text_one"
+        android:id="@+id/et_current_quantity_value"/>
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="@id/et_current_quantity_value"
+        app:layout_constraintTop_toTopOf="@id/et_current_quantity_value"
+        app:layout_constraintStart_toEndOf="@id/et_current_quantity_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/GreenBeansCircleButton"
+        android:text="@string/b_add"
+        android:id="@+id/button_add"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_add_to_kart"
+        android:id="@+id/button_add_to_kart"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

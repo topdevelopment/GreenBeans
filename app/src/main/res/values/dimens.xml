@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- dimens.xml
+-
+-->
+
+<resources>
+
+    <dimen name="default_margin">10dp</dimen>
+    <dimen name="small_margin">5dp</dimen>
+    <dimen name="large_margin">20dp</dimen>
+    <dimen name="extra_large_margin">40dp</dimen>
+    <dimen name="ui_stroke_width">2dp</dimen>
+
+    <dimen name="store_categories_button_width">110dp</dimen>
+    <dimen name="store_categories_button_height">40dp</dimen>
+    <dimen name="circle_button_width_height">40dp</dimen>
+    <dimen name="menu_button_width_height">40dp</dimen>
+    <dimen name="product_image_width_height">250dp</dimen>
+    <dimen name="highlighted_product_view_pager_height">100dp</dimen>
+    <dimen name="highlight_discount_edittext_width">200dp</dimen>
+    <dimen name="store_product_image_width_height">75dp</dimen>
+    <dimen name="tv_quantity_width">40dp</dimen>
+    <dimen name="dialog_listview_height">200dp</dimen>
+
+    <dimen name="button_textsize">16sp</dimen>
+    <dimen name="store_category_textsize">14sp</dimen>
+    <dimen name="title_textsize">24sp</dimen>
+    <dimen name="menu_textsize">18sp</dimen>
+    <dimen name="listview_order_id_textsize">16sp</dimen>
+    <dimen name="listview_status_textsize">12sp</dimen>
+    <dimen name="content_textsize">16sp</dimen>
+    <dimen name="dialog_title_textsize">36sp</dimen>
+    <dimen name="discount_textsize">42sp</dimen>
+
+    <dimen name="imageview_menu_width_height">25dp</dimen>
+    <dimen name="listview_item_height">50dp</dimen>
+    <dimen name="kart_item_height_width">40dp</dimen>
+    <dimen name="product_description_edittext_height">100dp</dimen>
+
+</resources>

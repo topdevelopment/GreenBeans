@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+-
+- TOP Development
+- dialog_add_admin_user_layout.xml
+-
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:layout_margin="@dimen/default_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/GreenBeansDialogTitle"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tv_add_user"
+        android:id="@+id/tv_title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        style="@style/GreenBeansEditText"
+        android:hint="@string/et_hint_fullname"
+        android:id="@+id/edittext_fullname"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_fullname"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/GreenBeansEditText"
+        android:hint="@string/et_hint_email"
+        android:id="@+id/edittext_email"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_email"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_add_product"
+        android:id="@+id/button_add"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_add"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        style="@style/GreenBeansButton"
+        android:text="@string/b_cancel"
+        android:id="@+id/button_cancel"/>
+
+</RelativeLayout>

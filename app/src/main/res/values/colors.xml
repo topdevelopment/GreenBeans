@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b5eda6</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="greenbeans_primary">#b5eda6</color>
+    <color name="greenbeans_primary_light">#80e066</color>
+    <color name="greenbeans_primary_dark">#4ccd29</color>
+    <color name="greenbeans_secondary">#ff6ec7</color>
+    <color name="gold">#FFD700</color>
+
+</resources>
